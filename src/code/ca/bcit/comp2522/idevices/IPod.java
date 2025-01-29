@@ -8,9 +8,11 @@ class IPod extends IDevice {
     private int numberOfSongs;
     private double maxVolume;
 
-    IPod(final int numberOfSongs, final double maxVolume)
+    IPod(final int numberOfSongs,
+         final double maxVolume)
     {
         super("music");
+
         validateNumberOfSongs(numberOfSongs);
         validateMaxVolume(maxVolume);
 
@@ -19,6 +21,7 @@ class IPod extends IDevice {
     }
 
     public int getNumberOfSongs()
+
     {
         return numberOfSongs;
     }
